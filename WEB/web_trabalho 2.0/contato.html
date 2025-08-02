@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+  <title>Formulário de reserva</title>
+</head>
+
+<body>
+  <header>
+        <nav class="navbar navbar-expand-lg bg-gray-custom" aria-label="Menu principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img id="logotipo" src="img/BrAtlas.png" alt="Logotipo do BrAtlas - Seu guia pelo Brasil">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Página inicial</a></li>
+                      <li class="nav-item"><a class="nav-link" href="curitiba.html">Curitiba</a></li>
+                      <li class="nav-item"><a class="nav-link" href="florianopolis.html">Florianópolis</a></li>
+                      <li class="nav-item"><a class="nav-link" href="maceio.html">Maceió</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <main class="container mb-5">
+    <h1 class="mb-4">Formulário de reserva</h1>
+
+    <form action="#" class="row g-3">
+
+      <div class="col-md-6">
+        <label for="nome" class="form-label">Nome completo *</label>
+        <input type="text" class="form-control" id="nome" name="nome" minlength="4" placeholder="Digite seu nome" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="senhaConfirmacao" class="form-label">Senha de Confirmação *</label>
+        <input type="password" class="form-control" id="senhaConfirmacao" name="senhaConfirmacao" minlength="4" maxlength="6" placeholder="Digite uma senha de 4 a 6 caracteres" required>
+      </div>
+
+      <div class="col-12">
+        <label for="fotoDocumento" class="form-label">Foto do Documento (opcional)</label>
+        <input type="file" class="form-control" id="fotoDocumento" name="fotoDocumento" accept=".jpg">
+        <div class="form-text">Apenas arquivos .jpg são aceitos</div>
+      </div>
+
+      <div class="col-md-4">
+        <label for="dias" class="form-label">Quantos dias pretende viajar?</label>
+        <input type="number" class="form-control" id="dias" name="dias" required min="0.1" max="10.0" step="0.01">
+      </div>
+
+      <div class="col-md-4">
+        <label for="data" class="form-label">Data desejada da viagem:</label>
+        <input type="date" class="form-control" id="data" name="data" required min="2025-01-01" max="2025-06-30">
+      </div>
+
+      <div class="col-md-4">
+        <label for="hora" class="form-label">Horário preferido para viajar *</label>
+        <input type="time" class="form-control" id="hora" name="hora" min="08:00" max="18:00" required>
+      </div>
+
+      <div class="col-md-6">
+        <label for="tipoPacote" class="form-label">Tipo de Pacote *</label>
+        <select class="form-select" id="tipoPacote" name="tipoPacote" required>
+          <option value="" disabled>Selecione uma opção</option>
+          <option value="1">Econômico</option>
+          <option value="2">Standard</option>
+          <option value="3" selected>Conforto</option>
+          <option value="4">Premium</option>
+          <option value="5">Luxo</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label d-block">Tipo de Viagem:</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="viagemLazer" name="tipoViagem" value="lazer" checked>
+          <label class="form-check-label" for="viagemLazer">Lazer</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="viagemNegocios" name="tipoViagem" value="negocios">
+          <label class="form-check-label" for="viagemNegocios">Negócios</label>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <label for="observacoes" class="form-label">Observações Especiais:</label>
+        <textarea class="form-control" id="observacoes" name="observacoes" rows="5" placeholder="Informe qualquer necessidade especial ou observação importante"></textarea>
+      </div>
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-custom" class="btn btn-primary w-100">Enviar formulário</button>
+      </div>
+    </form>
+  </main>
+
+  </main>
+
+  <div class="container">
+
+
+    <aside class="col-lg-4 mt-4 mt-lg-0">
+      <div class="bg-light p-3 rounded shadow-sm">
+        <header>
+          <h3 class="h5">Veja também</h3>
+        </header>
+        <nav>
+          <ol class="list-unstyled">
+            <li><a href="index.html">Página inicial</a></li>
+            <li><a href="curitiba.html">Curitiba</a></li>
+            <li><a href="florianopolis.html">Florianópolis</a></li>
+            <li><a href="maceio.html">Maceió</a></li>
+            <li><a href="contato.html">Formulário de reserva</a></li>
+          </ol>
+        </nav>
+      </div>
+    </aside>
+  </div>
+  </div>
+
+
+  <footer class="text-center p-3 bg-gray-custom">
+    <p>© Desenvolvido por Fábio Santana, Isabely Rocha e Marília Lemos</p>
+  </footer>
+</body>
+
+</html>

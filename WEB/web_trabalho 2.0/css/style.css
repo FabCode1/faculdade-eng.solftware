@@ -1,0 +1,189 @@
+/* ============================
+   🎨 Variáveis e fontes globais
+============================ */
+:root {
+    --bs-primary: #0077b6;
+    --bs-body-font-family: 'Lato', sans-serif;
+    --bs-body-color: #212529;
+}
+
+/* ============================
+   🌐 Estilos globais
+============================ */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F5F7FA;
+    color: var(--bs-body-color);
+    font-family: var(--bs-body-font-family);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    border-radius: 5px;
+}
+
+/* ============================
+   📷 Seções com imagem de fundo
+============================ */
+.imgInicio {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+#florianopolisImgInicio {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Morro_da_Cruz%2C_Florian%C3%B3polis_-_SC%2C_Brazil_-_panoramio_%28cropped%29.jpg/1200px-Morro_da_Cruz%2C_Florian%C3%B3polis_-_SC%2C_Brazil_-_panoramio_%28cropped%29.jpg");
+}
+
+#maceioImgInicio {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Macei%C3%B3_Alagoas_Brasil.jpg/960px-Macei%C3%B3_Alagoas_Brasil.jpg");
+}
+
+#curitibaImgInicio {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Vista_da_Torre_das_Merc%C3%AAs_em_Curitiba.jpg/960px-Vista_da_Torre_das_Merc%C3%AAs_em_Curitiba.jpg");
+}
+
+#ImgInicio {
+    background-image: url("https://bahiaeconomica.com.br/wp/wp-content/uploads/2024/03/Turismo-e-negocio-serio.-Nao-tanto-no-Brasil-shutterstock_435627745-1.jpg");
+}
+.imgInicio::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.imgInicio .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ============================
+   🃏 Cartões (Cards)
+============================ */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* ============================
+   🧩 Navegação e logotipo
+============================ */
+#logotipo {
+    width: 200px;
+}
+
+.nav-item:hover {
+    background-color: #adb5bd;
+}
+
+/* ============================
+   🎨 Cores customizadas
+============================ */
+.bg-primary-custom {
+    background-color: var(--bs-primary) !important;
+    color: white;
+}
+
+.bg-secondary-custom {
+    background-color: #118c4f !important;
+    color: white;
+}
+
+.bg-highlight {
+    background-color: #f4a300 !important;
+    color: var(--bs-body-color);
+}
+
+.bg-light-custom {
+    background-color: #f8f9fa !important;
+    color: var(--bs-body-color);
+}
+
+.bg-dark-custom {
+    background-color: #023047 !important;
+    color: white;
+}
+
+.bg-gray-custom {
+    background-color: #e9ecef;
+}
+
+
+/* ============================
+   🧭 Layout flex com menu lateral fixo
+============================ */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F5F7FA; /* mantém fundo */
+}
+
+.menu-lateral {
+  width: 220px;
+  background-color: #343a40; /* tom escuro para contraste */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-lateral a.nav-link {
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.menu-lateral a.nav-link:hover,
+.menu-lateral a.nav-link:focus {
+  background-color: #495057;
+  color: white;
+}
+
+.menu-lateral #logotipo {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.conteudo-principal {
+  margin-left: 220px;
+  padding: 1.5rem;
+  flex-grow: 1;
+}
