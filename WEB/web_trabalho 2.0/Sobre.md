@@ -1,6 +1,6 @@
 Esse site foi uma colaboração em grupo incluindo eu a isabely e a marília:
 
-O site é um site de viagens completo com algumaas páginas que facilmente poderia ser um site de viagens apenas adicionando novas informações. 
+O site é um site de viagens completo com algumaas páginas que facilmente poderiam ser um site de viagens ativo apenas adicionando novas informações. 
 
 creditos:
 
