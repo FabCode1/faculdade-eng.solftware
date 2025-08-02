@@ -2,7 +2,7 @@ def menu():
     print('1-Cadastrar turma')
     print('2- Cadastrar aluno')
     print('3-remover aluno')
-    print('4- Alunos com maior media')
+    print('4- Alunos com maior media'
     print('5-Fim')
 
 
@@ -168,7 +168,5 @@ while flag:
         flag=False
     else:
         print('opção invalida')
-
-
 
 

@@ -1,0 +1,1 @@
+Exercicios de Crud com python onde juntei todas as habilidades aprendidas em algoritimos e programação 1  para resolver estrutura de repetição, funções, dicionario e arquivos. 
