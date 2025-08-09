@@ -1,10 +1,15 @@
 # faculdade-eng.solftware
-Todos os melhores projetos feitos na faculdade de engenharia de software 
+Alguns dos projetos feitos na faculdade de engenharia de software 
+Quase tudo que foi feito aqui teve meramente o propósito de estudo e aprendizado
 
 
-Python - exercicios de logica usando python 
-aqui os conceitos basicos de python até funções dcionarios listas
+Algoritimos: 
+_ *Python e c (Loops,matrizes, decionários,listas,funções, modulos e muito mais )
 
-C - ainda não adicionando 
+Arquiterura de computadores:
+_ Projeto utilizando arduino
 
-tem também alguns projetos de web feitos html css java script  
+Web 
+_ - Html
+_ - CSS
+_ - java Scrip
