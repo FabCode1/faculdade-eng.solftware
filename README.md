@@ -1,15 +1,13 @@
-# faculdade-eng.solftware
-Alguns dos projetos feitos na faculdade de engenharia de software 
-Quase tudo que foi feito aqui teve meramente o propósito de estudo e aprendizado
+# Alguns dos projetos feitos na faculdade de Engenharia de Software
+Quase tudo que foi feito aqui teve meramente o propósito de estudo e aprendizado.
 
+## Algoritmos
+- Python e C(*Loops, matrizes, dicionários, listas, funções, módulos e muito mais*)
 
-Algoritimos: 
-_ *Python e c (Loops,matrizes, decionários,listas,funções, modulos e muito mais )
+## Arquitetura de Computadores
+- Projeto utilizando Arduino
 
-Arquiterura de computadores:
-_ Projeto utilizando arduino
-
-Web 
-_ - Html
-_ - CSS
-_ - java Scrip
+## Web
+- HTML
+- CSS
+- JavaScript
